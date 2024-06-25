@@ -111,7 +111,7 @@ img{
     object-fit: cover;
     border-radius: 15%;
     align-items: center;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.332);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.168);
 }
 
 .profile-pic-container{
