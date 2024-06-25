@@ -109,8 +109,9 @@ img{
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 1%;
+    border-radius: 15%;
     align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.332);
 }
 
 .profile-pic-container{
