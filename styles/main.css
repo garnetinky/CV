@@ -14,7 +14,7 @@
     --mainLinkColor: #0da2b8;
     --mainBorderColor: rgb(150, 150, 150);
     --mainBgColor: rgb(249, 250, 251);
-    --cardhover: rgb(30, 190, 214);
+    --cardhover: rgb(0, 0, 0);
 }
 
 [data-theme="dark"] {
@@ -159,7 +159,8 @@ img{
     display: inline-block;
     vertical-align: middle;
     color: grey;
-    transition: color 0.2s ease;
+    transition: color 0.4s ease;
+    width: 60px;
 }
 
 .social-icon {
@@ -190,6 +191,7 @@ img{
 
 .social-link:hover {
     color: var(--cardhover);
+    font-weight: 400;
 }
 
 #qualifications--list {
@@ -267,6 +269,12 @@ img{
         
     }
 
+    #bio{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     #profile-pic {
         width: 200px;
         height: 200px;
@@ -275,6 +283,15 @@ img{
     .card--work-history {
         border-left: none;
         padding-left: 0;
+    }
+
+    #wrapper--techstack__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        font-size: 0.9em;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -285,6 +302,9 @@ img{
     display: flex;
     gap: 10px;
     cursor: pointer;
+    animation: titlefade 0.1s ease forwards;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-play-state: paused;
 }
 
 .theme {
