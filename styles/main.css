@@ -15,6 +15,7 @@
     --mainBorderColor: rgb(150, 150, 150);
     --mainBgColor: rgb(249, 250, 251);
     --cardhover: rgb(0, 0, 0);
+    --grayscale: 0
 }
 
 [data-theme="dark"] {
@@ -24,6 +25,7 @@
     --mainBorderColor: #2b3031;
     --mainBgColor: #131415;
     --cardhover: white;
+    --grayscale: 100
 }
 
 * {
@@ -31,6 +33,7 @@
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
+    transition: background-color 0.5s ease, color 0.5s ease, filter 0.5s ease;
 }
 
 body {
@@ -41,11 +44,7 @@ p, span, li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
-/*
-h2 {
-    text-decoration:underline; 
-}
-*/
+
 a {
     text-decoration: none;
     color: var(--mainLinkColor);
@@ -59,6 +58,7 @@ li {
 img{
     padding: 0px;
     margin: 0px;
+    filter: grayscale(var(--grayscale));
 }
 
 ul{
@@ -345,12 +345,12 @@ ul{
     width: 30px;
     border-radius: 50%;
     border-width: 1px;
-    transition: box-shadow 0.5s ease, height 0.5s ease, width 0.5s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 .theme:hover {
-    height: 33px;
-    width: 33px;
+    height: 30px;
+    width: 30px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
