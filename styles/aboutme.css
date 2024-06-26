@@ -398,7 +398,7 @@ ul{
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
 }
 
-.slides > div {
+.slides div {
     display: flex;
     flex-shrink: 0;
     width: 100%;
