@@ -38,7 +38,7 @@
 
 body {
     background-color: var(--mainBgColor);
-    animation: fadein ease 2s;
+    animation: fadein ease 1s;
 }
 
 p, span, li {
