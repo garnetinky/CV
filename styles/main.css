@@ -38,6 +38,7 @@
 
 body {
     background-color: var(--mainBgColor);
+    animation: fadein ease 2s;
 }
 
 p, span, li {
@@ -104,6 +105,17 @@ ul{
 
     100%{
         opacity: 0;
+    }
+}
+
+@keyframes fadein{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }
 
@@ -179,9 +191,10 @@ ul{
 .social-link {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
     color: grey;
     transition: color 0.4s ease;
-    width: 60px;
+    width:80px;
 }
 
 .social-icon {
