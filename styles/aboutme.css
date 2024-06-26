@@ -392,10 +392,16 @@ ul{
 /* Container for the slides */
 .slides {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden; /* Prevents vertical scrolling */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.slides:hover {
+    overflow-x: auto; /* Show scrollbar on hover */
 }
 
 .slides div {
