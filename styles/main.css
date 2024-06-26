@@ -80,6 +80,11 @@ ul{
     margin: 0px;
 }
 
+#university {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 #wrapper--hero {
     display: flex;
     align-items: center;
@@ -135,6 +140,12 @@ ul{
     margin: 0px;
 }
 
+#degree {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
 #IntSect {
     opacity: 1;
     min-width: 400px;
@@ -144,6 +155,11 @@ ul{
     align-items: flex-start;
     gap: 20px;
     
+}
+
+#hat {
+    font-size:25px; 
+    color:var(--mainTextColor);
 }
 
 #socials--list {
