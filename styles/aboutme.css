@@ -393,6 +393,7 @@ ul{
 .slides {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden; /* Prevents vertical scrolling */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
 }
@@ -418,9 +419,7 @@ ul{
   
 
 .slides img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 100%;
+    object-fit:fill;
     overflow: hidden;
 }
 
