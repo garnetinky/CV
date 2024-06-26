@@ -309,7 +309,6 @@ ul{
     align-items: center;
     gap: 4em;
     font-size: 1em;
-    min-height: 303px;
     animation: titlefade 0.3s ease forwards;
     animation-delay: calc(var(--scroll) * -1s);
     animation-play-state: paused;
