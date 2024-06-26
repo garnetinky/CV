@@ -339,6 +339,21 @@ ul{
         align-items: center;
         justify-content: center;
     }
+
+    #constructionnotice{
+        text-align:center;
+        display: flex;
+        flex-direction: column;
+        font-size: 10pt;
+        gap: 50px;
+        margin-top:100px;
+    }
+    
+    #constructionnotice h1{
+            padding: 0px;
+            margin: 0px;
+            font-size: 40pt;
+    }
 }
 
 #theme-switcher {
