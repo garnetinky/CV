@@ -290,6 +290,17 @@ ul{
         text-align: center;
         
     }
+    
+    #wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    font-size: 1em;
+    min-height: 303px;
+    animation: titlefade 0.01s ease forwards;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-play-state: paused;
+    }
 
     #bio{
         max-width: 100%;
